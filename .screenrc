@@ -1,0 +1,30 @@
+startup_message off
+defscrollback 15000
+zombie "^c"
+
+# hardstatus breakdown (repeated portions are ommitted)
+# %{= wk}
+#   = clear all attributes
+#   w grey background
+#   k black text
+# %H host name
+# %-w all windows before current window
+# %{+u r} underline and red text
+# %n number
+# %t title
+# %+w all windows after current window
+hardstatus alwayslastline "%{= wk}%H | %-w%{+u r}%n %t%{= wk}%+w%{= wk}"
+
+# allow backspace to work
+bindkey -d -k kb stuff "\010"
+
+#terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+termcapinfo xterm-color "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+# erase background with current bg color
+defbce "on"
+
+
