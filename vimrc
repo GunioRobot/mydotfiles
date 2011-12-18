@@ -1,6 +1,6 @@
 syntax on
 set background=dark
-set scrolloff=3 " start scrolling when cursor is x lines away from top/bottom 
+set scrolloff=3 " start scrolling when cursor is x lines away from top/bottom
 set history=1000
 
 set t_Co=256 " http://pjkh.com/articles/2008/07/09/osx-iterm-screen-vim-256-colors
@@ -38,4 +38,4 @@ highlight Search ctermbg=yellow ctermfg=white cterm=bold
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
 highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
+highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
